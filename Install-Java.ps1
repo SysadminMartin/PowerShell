@@ -36,7 +36,7 @@
     Installs Java
 
     .DESCRIPTION
-    This script uninstalls old Java versions, then installs a newer version. Use the SkipInstallation switch to only install Java, without trying to uninstall anything first. Specify the Java MSI installation file path in the Path parameter.
+    This script uninstalls old Java versions, then installs a newer version. Use the SkipInstallation switch to only install Java, without trying to uninstall anything first.
 
     .INPUTS
     None
@@ -436,5 +436,6 @@ $tempDirectoryPath = Join-Path -Path $systemDrive -ChildPath 'Temp'
 if (-not $PSBoundParameters.ContainsKey('SkipUninstallation')) {
     Uninstall-OldJavaVersions -SystemDrive $systemDrive -TempDirectoryPath $tempDirectoryPath -NewVersion $Version
 }
+
 
 Install-NewJavaVersion -Version $Version -TempDirectoryPath $tempDirectoryPath
