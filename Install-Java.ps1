@@ -2,7 +2,7 @@
 
 .VERSION 1.0.0
 
-.GUID f9cb7d1e-610e-41d1-a960-50a4e4e6b87a
+.GUID b05fa01f-029e-424f-b42a-582e00044095
 
 .AUTHOR Name
 
@@ -439,3 +439,4 @@ if (-not $PSBoundParameters.ContainsKey('SkipUninstallation')) {
 
 
 Install-NewJavaVersion -Version $Version -TempDirectoryPath $tempDirectoryPath
+
