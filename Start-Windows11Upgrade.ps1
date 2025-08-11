@@ -2,7 +2,7 @@
 
 .VERSION 1.0.0
 
-.GUID 309659cf-0358-4996-9992-34f8a7dc09b9
+.GUID 4346fefb-0991-4eb3-b1ae-01ab32972fb1
 
 .AUTHOR Name
 
@@ -188,4 +188,5 @@ else {
         Remove-Item -Path $installerFilePath
     }
     throw "The script has determined that this isn't a Windows 10 system. Use the Force parameter if you want to bypass this check and run the upgrade anyway."
+
 }
